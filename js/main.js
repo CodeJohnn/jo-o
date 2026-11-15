@@ -22,36 +22,6 @@
     $$(".rv").forEach(function(el,i){el.style.transitionDelay=(i%4)*70+"ms";ro.observe(el)});
   }else{$$(".rv").forEach(function(el){el.classList.add("in")})}
 
-  /* filtros */
-  $$(".chip").forEach(function(b){b.addEventListener("click",function(){
-    $$(".chip").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
-    var f=b.dataset.f;
-    $$(".proj").forEach(function(p){p.hidden=!(f==="all"||p.dataset.cat===f)});
-  })});
-
-  /* detalhes dos projetos. Para ligar um link real, preencha "url" */
-  var P={
-    ancora:{cat:"Sistema web",t:"Âncora Finanças",d:"Dashboard de finanças pessoais, construído em etapas, para dar clareza sobre para onde o dinheiro vai.",l:["Painel com visão geral de receitas e despesas","Front-end em React e API em Node.js","Dados armazenados em MySQL"],tags:["React","Node.js","MySQL"],url:""},
-    barbearia:{cat:"Sistema web",t:"Julio Barbearia",d:"Sistema de gestão para barbearia com front-end e back-end próprios.",l:["Três perfis de usuário com permissões diferentes","Organização de agenda e atendimentos","Interface pensada para uso no dia a dia do balcão"],tags:["Front-end","Back-end","Perfis de acesso"],url:""},
-    locomove:{cat:"Plataforma · Protótipo",t:"LocoMove",d:"Protótipo de plataforma de transporte acessível voltada a pessoas com mobilidade reduzida no Brasil.",l:["Foco em acessibilidade desde o desenho da interface","Fluxo pensado para quem precisa de transporte adaptado","Validação da ideia em formato de protótipo"],tags:["Acessibilidade","UX","Protótipo"],url:""},
-    biblioteca:{cat:"Site",t:"Biblioteca de Alexandria",d:"Site pessoal para catalogar filmes e séries assistidos, publicado no GitHub Pages.",l:["Busca de títulos pela API do TMDB","Lista salva no navegador com LocalStorage","HTML, CSS e JavaScript puros"],tags:["HTML","CSS","JavaScript","API TMDB"],url:""}
-  };
-  var dlg=$("#dlg");
-  function open(id){
-    var p=P[id], card=$('.proj[data-id="'+id+'"]');
-    $("#dshot").innerHTML=$(".shot",card).innerHTML;
-    $("#dcat").textContent=p.cat;$("#dt").textContent=p.t;$("#dd").textContent=p.d;
-    $("#dl").innerHTML=p.l.map(function(x){return "<li>"+x+"</li>"}).join("");
-    $("#dtags").innerHTML=p.tags.map(function(x){return "<span>"+x+"</span>"}).join("");
-    var cta=$("#dcta");
-    if(p.url){cta.href=p.url;cta.textContent="Ver projeto online"}
-    else{cta.href=wa("Olá João, vi o projeto "+p.t+" no seu portfólio e quero algo parecido.");cta.textContent="Quero algo parecido"}
-    if(dlg.showModal)dlg.showModal();else dlg.setAttribute("open","");
-  }
-  $$(".proj").forEach(function(c){c.addEventListener("click",function(){open(c.dataset.id)})});
-  $("#dx").addEventListener("click",function(){dlg.close()});
-  dlg.addEventListener("click",function(e){if(e.target===dlg)dlg.close()});
-
   /* atalhos de serviço preenchem o formulário */
   $$("[data-svc]").forEach(function(a){a.addEventListener("click",function(){
     var map={"site institucional":0,"landing page":1,"sistema web":2};
