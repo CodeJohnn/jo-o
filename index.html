@@ -17,7 +17,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/portfolio.css">
 <script src="js/main.js" defer></script>
+<script src="js/portfolio.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -57,32 +59,29 @@
 <!-- PROJETOS -->
 <section id="projetos">
   <div class="wrap">
-    <span class="eyebrow rv">01 / Trabalhos</span>
-    <h2 class="h2 rv">Projetos<br><em>selecionados.</em></h2>
-    <p class="lead rv">Finanças, gestão, mobilidade e cultura. Quatro contextos diferentes para o mesmo trabalho: desenvolver para a web.</p>
-    <div class="filters rv" role="group" aria-label="Filtrar projetos">
-      <button class="chip" data-f="all" aria-pressed="true">Todos</button>
-      <button class="chip" data-f="sistema" aria-pressed="false">Sistemas</button>
-      <button class="chip" data-f="site" aria-pressed="false">Sites</button>
-    </div>
-    <div class="proj-grid">
-      <button class="card proj rv" data-cat="sistema" data-id="ancora" aria-label="Abrir detalhes de Âncora Finanças">
-        <div class="shot"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#0e0e0e"/><rect x="16" y="16" width="70" height="168" rx="10" fill="#151515" stroke="#2a2a2a"/><rect x="26" y="30" width="40" height="6" rx="3" fill="#d4af37"/><rect x="26" y="48" width="50" height="5" rx="2.500" fill="#2e2e2e"/><rect x="26" y="62" width="44" height="5" rx="2.500" fill="#2e2e2e"/><rect x="26" y="76" width="48" height="5" rx="2.500" fill="#2e2e2e"/><rect x="98" y="16" width="64" height="40" rx="10" fill="#151515" stroke="#2a2a2a"/><rect x="108" y="28" width="30" height="5" rx="2.500" fill="#777"/><rect x="108" y="38" width="42" height="9" rx="3" fill="#f3d77e"/><rect x="170" y="16" width="64" height="40" rx="10" fill="#151515" stroke="#2a2a2a"/><rect x="180" y="28" width="30" height="5" rx="2.500" fill="#777"/><rect x="180" y="38" width="42" height="9" rx="3" fill="#fff"/><rect x="242" y="16" width="62" height="40" rx="10" fill="#151515" stroke="#2a2a2a"/><rect x="252" y="28" width="30" height="5" rx="2.500" fill="#777"/><rect x="252" y="38" width="40" height="9" rx="3" fill="#a8841f"/><rect x="98" y="68" width="206" height="116" rx="12" fill="#151515" stroke="#2a2a2a"/><g fill="#d4af37"><rect x="114" y="140" width="16" height="32" rx="3" opacity=".5"/><rect x="140" y="120" width="16" height="52" rx="3" opacity=".65"/><rect x="166" y="130" width="16" height="42" rx="3" opacity=".5"/><rect x="192" y="100" width="16" height="72" rx="3"/><rect x="218" y="112" width="16" height="60" rx="3" opacity=".75"/><rect x="244" y="86" width="16" height="86" rx="3"/><rect x="270" y="104" width="16" height="68" rx="3" opacity=".8"/></g></svg></div>
-        <div class="proj-body"><small>Sistema web</small><h3>Âncora Finanças</h3><p>Dashboard de finanças pessoais para acompanhar receitas, despesas e metas em um só lugar.</p><div class="tags"><span>React</span><span>Node.js</span><span>MySQL</span></div><span class="project-open">Explorar projeto ↗</span></div>
-      </button>
-      <button class="card proj rv" data-cat="sistema" data-id="barbearia" aria-label="Abrir detalhes de Julio Barbearia">
-        <div class="shot"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#0e0e0e"/><rect x="16" y="16" width="288" height="30" rx="10" fill="#151515" stroke="#2a2a2a"/><circle cx="34" cy="31" r="6" fill="#d4af37"/><rect x="48" y="28" width="60" height="6" rx="3" fill="#777"/><rect x="236" y="25" width="56" height="12" rx="6" fill="#d4af37"/><g stroke="#2a2a2a" fill="#151515"><rect x="16" y="58" width="92" height="126" rx="10"/><rect x="114" y="58" width="92" height="126" rx="10"/><rect x="212" y="58" width="92" height="126" rx="10"/></g><g fill="#d4af37"><rect x="24" y="72" width="76" height="22" rx="6" opacity=".9"/><rect x="24" y="102" width="76" height="22" rx="6" opacity=".45"/><rect x="122" y="84" width="76" height="22" rx="6" opacity=".6"/><rect x="122" y="116" width="76" height="22" rx="6"/><rect x="220" y="72" width="76" height="22" rx="6" opacity=".5"/><rect x="220" y="140" width="76" height="22" rx="6" opacity=".85"/></g></svg></div>
-        <div class="proj-body"><small>Sistema web</small><h3>Julio Barbearia</h3><p>Sistema de gestão para barbearia com agenda e três perfis de usuário, cada um com suas permissões.</p><div class="tags"><span>Front-end</span><span>Back-end</span><span>Perfis de acesso</span></div><span class="project-open">Explorar projeto ↗</span></div>
-      </button>
-      <button class="card proj rv" data-cat="sistema" data-id="locomove" aria-label="Abrir detalhes de LocoMove">
-        <div class="shot"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#0e0e0e"/><g stroke="#1f1f1f" stroke-width="1"><path d="M0 40H320M0 90H320M0 140H320M60 0V200M130 0V200M200 0V200M270 0V200"/></g><path d="M30 160C80 150 90 90 140 100S210 60 280 40" fill="none" stroke="#d4af37" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/><circle cx="30" cy="160" r="10" fill="#fff"/><circle cx="280" cy="40" r="12" fill="#d4af37"/><circle cx="280" cy="40" r="22" fill="none" stroke="#d4af37" opacity=".4"/><rect x="104" y="124" width="112" height="52" rx="12" fill="#151515" stroke="#3a3a3a"/><rect x="116" y="138" width="60" height="6" rx="3" fill="#f3d77e"/><rect x="116" y="152" width="84" height="5" rx="2.500" fill="#555"/></svg></div>
-        <div class="proj-body"><small>Plataforma · Protótipo</small><h3>LocoMove</h3><p>Protótipo de plataforma de transporte acessível para pessoas com mobilidade reduzida no Brasil.</p><div class="tags"><span>Acessibilidade</span><span>UX</span><span>Protótipo</span></div><span class="project-open">Explorar projeto ↗</span></div>
-      </button>
-      <button class="card proj rv" data-cat="site" data-id="biblioteca" aria-label="Abrir detalhes de Biblioteca de Alexandria">
-        <div class="shot"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#0e0e0e"/><rect x="16" y="14" width="120" height="8" rx="4" fill="#f3d77e"/><g><rect x="16" y="38" width="64" height="94" rx="8" fill="#1d1d1d" stroke="#333"/><rect x="90" y="38" width="64" height="94" rx="8" fill="#a8841f"/><rect x="164" y="38" width="64" height="94" rx="8" fill="#1d1d1d" stroke="#333"/><rect x="238" y="38" width="64" height="94" rx="8" fill="#d4af37" opacity=".8"/></g><g fill="#777"><rect x="16" y="142" width="50" height="5" rx="2.500"/><rect x="90" y="142" width="44" height="5" rx="2.500"/><rect x="164" y="142" width="52" height="5" rx="2.500"/><rect x="238" y="142" width="40" height="5" rx="2.500"/></g><g fill="#d4af37"><rect x="16" y="156" width="30" height="5" rx="2.500"/><rect x="90" y="156" width="30" height="5" rx="2.500"/><rect x="164" y="156" width="30" height="5" rx="2.500"/><rect x="238" y="156" width="30" height="5" rx="2.500"/></g></svg></div>
-        <div class="proj-body"><small>Site</small><h3>Biblioteca de Alexandria</h3><p>Site pessoal para catalogar filmes e séries, com busca de dados pela API do TMDB.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API TMDB</span></div><span class="project-open">Explorar projeto ↗</span></div>
-      </button>
-    </div>
+<div class="featured" data-coverflow role="region" aria-roledescription="carrossel" aria-labelledby="featured-title">
+  <div class="featured-heading"><div><span class="eyebrow">Portfólio / Projetos online</span><h2 class="h2" id="featured-title">Projetos em <em>Destaque</em></h2></div><p class="lead">Experiências digitais com identidade própria. Explore os sites e sistemas que desenvolvi.</p></div>
+  <div class="featured-stage"><article class="featured-card" data-project="0" role="group" aria-roledescription="slide" aria-label="1 de 3: MyHomeLab">
+  <div class="featured-browser"><span aria-hidden="true">● ● ●</span><span>homelab.guedessec.online</span><span aria-hidden="true">↗</span></div>
+  <img src="assets/projects/myhomelab.png" width="1440" height="900" alt="Captura da página inicial do MyHomeLab" loading="lazy" decoding="async" draggable="false">
+  <div class="featured-body"><span class="eyebrow">Experiência 3D</span><h3>MyHomeLab</h3><p>Ambiente virtual interativo em 3D para explorar um laboratório com uma experiência imersiva.</p><a class="btn btn-gold" href="https://homelab.guedessec.online/" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a></div>
+  <button class="featured-select" type="button" aria-label="Centralizar MyHomeLab"></button>
+</article>
+<article class="featured-card" data-project="1" role="group" aria-roledescription="slide" aria-label="2 de 3: GuedesSEC">
+  <div class="featured-browser"><span aria-hidden="true">● ● ●</span><span>guedessec.online</span><span aria-hidden="true">↗</span></div>
+  <img src="assets/projects/guedessec.png" width="1440" height="900" alt="Captura da página inicial do GuedesSEC" loading="lazy" decoding="async" draggable="false">
+  <div class="featured-body"><span class="eyebrow">Marca & presença digital</span><h3>GuedesSEC</h3><p>Portal da marca GuedesSEC, com a Biblioteca de Alexandria e acesso a recursos digitais.</p><a class="btn btn-gold" href="https://guedessec.online/" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a></div>
+  <button class="featured-select" type="button" aria-label="Centralizar GuedesSEC"></button>
+</article>
+<article class="featured-card" data-project="2" role="group" aria-roledescription="slide" aria-label="3 de 3: FinGSEC">
+  <div class="featured-browser"><span aria-hidden="true">● ● ●</span><span>fingsec.guedessec.online</span><span aria-hidden="true">↗</span></div>
+  <img src="assets/projects/fingsec.png" width="1440" height="900" alt="Captura da página inicial do FinGSEC" loading="lazy" decoding="async" draggable="false">
+  <div class="featured-body"><span class="eyebrow">Sistema web</span><h3>FinGSEC</h3><p>Gerenciamento financeiro pessoal em uma interface web para organizar o dia a dia.</p><a class="btn btn-gold" href="https://fingsec.guedessec.online/" target="_blank" rel="noopener noreferrer">Visualizar projeto <span aria-hidden="true">↗</span></a></div>
+  <button class="featured-select" type="button" aria-label="Centralizar FinGSEC"></button>
+</article></div>
+  <div class="featured-controls"><div class="featured-arrows"><button type="button" data-prev aria-label="Projeto anterior">←</button><button type="button" data-next aria-label="Próximo projeto">→</button></div><div class="featured-dots" role="group" aria-label="Escolher projeto"><button type="button" data-go="0" aria-label="Mostrar MyHomeLab" aria-pressed="true"><span></span></button><button type="button" data-go="1" aria-label="Mostrar GuedesSEC" aria-pressed="false"><span></span></button><button type="button" data-go="2" aria-label="Mostrar FinGSEC" aria-pressed="false"><span></span></button></div><button class="featured-play" type="button" data-play aria-label="Pausar rotação automática">Pausar rotação <span aria-hidden="true">Ⅱ</span></button></div>
+  <p class="featured-status" aria-live="polite" aria-atomic="true"></p>
+</div>
   </div>
 </section>
 
@@ -209,20 +208,6 @@
 <footer><div class="foot"><span>© <span id="yr">2026</span> João Mateus · Desenvolvedor Full-Stack</span><a href="#inicio" class="back-to-top">Voltar ao topo ↑</a></div></footer>
 
 <a class="wa" href="https://wa.me/5519971026797?text=Ol%C3%A1%20Jo%C3%A3o%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm5.800 14.200c-.2.700-1.400 1.300-1.900 1.400-.5.100-1.100.1-1.800-.1-.4-.1-.9-.3-1.600-.6-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.400 0 .5l-.3.500-.4.400c-.1.200-.3.300-.1.600.2.300.7 1.200 1.500 1.900 1 .9 1.900 1.200 2.200 1.300.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.800.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg></a>
-
-<dialog id="dlg" aria-labelledby="dt">
-  <button class="dlg-x" id="dx" aria-label="Fechar">✕</button>
-  <div class="shot" id="dshot"></div>
-  <div class="dlg-body">
-    <small class="eyebrow" id="dcat"></small>
-    <h3 id="dt"></h3>
-    <p id="dd"></p>
-    <ul id="dl"></ul>
-    <div class="tags" id="dtags"></div>
-    <a class="btn btn-gold" id="dcta" href="#" target="_blank" rel="noopener">Conversar sobre este projeto</a>
-  </div>
-</dialog>
-
 
 </body>
 </html>
